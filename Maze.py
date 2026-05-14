@@ -4,13 +4,15 @@ import sys
 
 pygame.init()
 
+#Display Settings
 Width = 800
 Height = 800
-
+#Initail actions 
 Screen = pygame.display.set_mode((Width, Height))
 pygame.display.set_caption("Maze-Maker 1")
 clock = pygame.time.Clock()
 
+#Game Loop
 Running = True
 while Running:
     for event in pygame.event.get():
@@ -25,4 +27,3 @@ while Running:
 
 pygame.quit()
 sys.exit()
-

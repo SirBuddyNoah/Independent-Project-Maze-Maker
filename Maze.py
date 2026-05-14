@@ -23,6 +23,23 @@ Screen = pygame.display.set_mode((Width, Height))
 pygame.display.set_caption("Maze-Maker 1")
 clock = pygame.time.Clock()
 
+#Cells
+class Cell:
+
+    def __init__(self, row, col):
+
+        self.row = row
+        self.col = col
+
+        self.visited = False
+
+        self.walls = {
+            "Up": True,
+            "Down": True,
+            "Left": True,
+            "Right": True
+        }
+
 #Grid construct
 def draw_grid():
     for row in range(Rows):
